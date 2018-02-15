@@ -9,9 +9,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.microsoft.alm</groupId>
+        <groupId>com.sonarsource.vsts</groupId>
         <artifactId>alm-http-client</artifactId>
-        <version>15.108.2-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>alm-http-client-dep</artifactId>
@@ -23,34 +23,34 @@
     <!-- Microsoft TFS REST Client Components -->
     <dependencies>
         <dependency>
-            <groupId>com.microsoft.alm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>alm-vss-client</artifactId>
-            <version>15.108.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.alm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>alm-distributedtask-client</artifactId>
-            <version>15.108.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.alm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>alm-gallery-client</artifactId>
-            <version>15.108.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.alm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>alm-extensionmanagement-client</artifactId>
-            <version>15.108.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.alm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>alm-releasemanagement-client</artifactId>
-            <version>15.108.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.microsoft.alm</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>alm-tfs-client</artifactId>
-            <version>15.108.2-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 </project>
