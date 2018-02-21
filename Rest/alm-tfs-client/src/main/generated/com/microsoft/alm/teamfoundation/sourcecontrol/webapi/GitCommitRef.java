@@ -15,7 +15,8 @@
 
 package com.microsoft.alm.teamfoundation.sourcecontrol.webapi;
 
-import java.util.ArrayList;
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.microsoft.alm.visualstudio.services.webapi.ReferenceLinks;
 import com.microsoft.alm.visualstudio.services.webapi.ResourceRef;
@@ -27,16 +28,16 @@ public class GitCommitRef {
     private ReferenceLinks _links;
     private GitUserDate author;
     private ChangeCountDictionary changeCounts;
-    private ArrayList<GitChange> changes;
+    private List<GitChange> changes;
     private String comment;
     private boolean commentTruncated;
     private String commitId;
     private GitUserDate committer;
-    private ArrayList<String> parents;
+    private List<String> parents;
     private String remoteUrl;
-    private ArrayList<GitStatus> statuses;
+    private List<GitStatus> statuses;
     private String url;
-    private ArrayList<ResourceRef> workItems;
+    private List<ResourceRef> workItems;
 
     @JsonProperty("_links")
     public ReferenceLinks getLinks() {
@@ -64,11 +65,11 @@ public class GitCommitRef {
         this.changeCounts = changeCounts;
     }
 
-    public ArrayList<GitChange> getChanges() {
+    public List<GitChange> getChanges() {
         return changes;
     }
 
-    public void setChanges(final ArrayList<GitChange> changes) {
+    public void setChanges(final List<GitChange> changes) {
         this.changes = changes;
     }
 
@@ -104,11 +105,11 @@ public class GitCommitRef {
         this.committer = committer;
     }
 
-    public ArrayList<String> getParents() {
+    public List<String> getParents() {
         return parents;
     }
 
-    public void setParents(final ArrayList<String> parents) {
+    public void setParents(final List<String> parents) {
         this.parents = parents;
     }
 
@@ -120,11 +121,11 @@ public class GitCommitRef {
         this.remoteUrl = remoteUrl;
     }
 
-    public ArrayList<GitStatus> getStatuses() {
+    public List<GitStatus> getStatuses() {
         return statuses;
     }
 
-    public void setStatuses(final ArrayList<GitStatus> statuses) {
+    public void setStatuses(final List<GitStatus> statuses) {
         this.statuses = statuses;
     }
 
@@ -136,11 +137,11 @@ public class GitCommitRef {
         this.url = url;
     }
 
-    public ArrayList<ResourceRef> getWorkItems() {
+    public List<ResourceRef> getWorkItems() {
         return workItems;
     }
 
-    public void setWorkItems(final ArrayList<ResourceRef> workItems) {
+    public void setWorkItems(final List<ResourceRef> workItems) {
         this.workItems = workItems;
     }
 }
