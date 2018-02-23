@@ -3,14 +3,12 @@
   ~ Licensed under the MIT license. See License.txt in the project root.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sonarsource.vsts</groupId>
     <artifactId>alm-http-client-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
     <name>Microsoft ALM HTTP Client</name>
@@ -31,43 +29,43 @@
     <developers>
         <developer>
             <name>Alex Rukhlin</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>David Staheli</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>Jason Prickett</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>Jeff Young</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>Leah Antkiewicz</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>Madhuri Gummalla</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
         <developer>
             <name>Yang Cao</name>
-            <email></email>
+            <email />
             <organization>Microsoft</organization>
             <organizationUrl>http://www.microsoft.com/</organizationUrl>
         </developer>
@@ -182,7 +180,8 @@
         <connection>scm:git:git@github.com:SonarSource/vso-httpclient-java.git</connection>
         <developerConnection>scm:git:git@github.com:SonarSource/vso-httpclient-java.git</developerConnection>
         <url>https://github.com/SonarSource/vso-httpclient-java.git</url>
-    </scm>
+      <tag>alm-http-client-parent-1.0.0</tag>
+  </scm>
 
 
 </project>
