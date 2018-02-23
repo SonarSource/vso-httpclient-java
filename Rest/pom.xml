@@ -9,7 +9,7 @@
     <parent>
         <groupId>com.sonarsource.vsts</groupId>
         <artifactId>alm-http-client-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>alm-http-client</artifactId>
@@ -109,7 +109,7 @@
 
     <scm> 
         <url>git:https://github.com/Microsoft/vso-httpclient-java.git</url>
-      <tag>alm-http-client-parent-1.0.0</tag>
+      <tag>HEAD</tag>
   </scm> 
 
 </project>
