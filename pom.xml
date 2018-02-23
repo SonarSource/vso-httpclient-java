@@ -165,27 +165,24 @@
                         </goals> 
                     </execution> 
                 </executions> 
-            </plugin> 
+            </plugin>
+            
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-release-plugin</artifactId>
+              <version>2.5.3</version>
+              <configuration>
+                <autoVersionSubmodules>true</autoVersionSubmodules>
+              </configuration>
+            </plugin>
         </plugins> 
     </build>
 
-    <distributionManagement>
-        <repository>
-            <id>vss-artifacts</id>
-            <name>Private Maven releases repository on artifacts.cloudapp.net</name>
-            <url>http://artifacts.eastus.cloudapp.azure.com:8081/nexus/content/repositories/releases</url>
-            <uniqueVersion>false</uniqueVersion>
-        </repository>
-        <snapshotRepository>
-            <id>vss-artifacts-snapshots</id>
-            <name>Private Maven snapshot repository on artifacts.cloudapp.net</name>
-            <url>http://artifacts.eastus.cloudapp.azure.com:8081/nexus/content/repositories/snapshots</url>
-            <uniqueVersion>false</uniqueVersion>
-        </snapshotRepository>
-    </distributionManagement>
+    <scm>
+        <connection>scm:git:git@github.com:SonarSource/vso-httpclient-java.git</connection>
+        <developerConnection>scm:git:git@github.com:SonarSource/vso-httpclient-java.git</developerConnection>
+        <url>https://github.com/SonarSource/vso-httpclient-java.git</url>
+    </scm>
 
-    <scm> 
-        <url>git:https://github.com/Microsoft/vso-httpclient-java.git</url>
-    </scm> 
 
 </project>
