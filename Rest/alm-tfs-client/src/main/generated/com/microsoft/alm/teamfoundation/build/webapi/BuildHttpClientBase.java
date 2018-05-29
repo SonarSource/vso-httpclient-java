@@ -23,37 +23,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.microsoft.alm.client.HttpMethod;
-import com.microsoft.alm.client.model.NameValueCollection;
 import com.microsoft.alm.client.VssHttpClientBase;
 import com.microsoft.alm.client.VssMediaTypes;
 import com.microsoft.alm.client.VssRestClientHandler;
 import com.microsoft.alm.client.VssRestRequest;
-import com.microsoft.alm.teamfoundation.build.webapi.Build;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildArtifact;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildBadge;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildController;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildDefinition;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildDefinitionReference;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildDefinitionRevision;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildDefinitionTemplate;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildLog;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildMetric;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildOptionDefinition;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildQueryOrder;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildReason;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildReportMetadata;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildResourceUsage;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildResult;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildSettings;
-import com.microsoft.alm.teamfoundation.build.webapi.BuildStatus;
-import com.microsoft.alm.teamfoundation.build.webapi.Change;
-import com.microsoft.alm.teamfoundation.build.webapi.DefinitionQueryOrder;
-import com.microsoft.alm.teamfoundation.build.webapi.Folder;
-import com.microsoft.alm.teamfoundation.build.webapi.FolderQueryOrder;
-import com.microsoft.alm.teamfoundation.build.webapi.QueryDeletedOption;
-import com.microsoft.alm.teamfoundation.build.webapi.Timeline;
+import com.microsoft.alm.client.model.NameValueCollection;
 import com.microsoft.alm.visualstudio.services.webapi.ApiResourceVersion;
 import com.microsoft.alm.visualstudio.services.webapi.ResourceRef;
 
@@ -898,7 +875,7 @@ public abstract class BuildHttpClientBase
      *            
      * @return ArrayList&lt;Build&gt;
      */
-    public ArrayList<Build> getBuilds(
+    public List<Build> getBuilds(
         final String project, 
         final List<Integer> definitions, 
         final List<Integer> queues, 
@@ -956,7 +933,7 @@ public abstract class BuildHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Build>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Build>>() {});
     }
 
     /** 
@@ -1006,7 +983,7 @@ public abstract class BuildHttpClientBase
      *            
      * @return ArrayList&lt;Build&gt;
      */
-    public ArrayList<Build> getBuilds(
+    public List<Build> getBuilds(
         final UUID project, 
         final List<Integer> definitions, 
         final List<Integer> queues, 
@@ -1064,7 +1041,7 @@ public abstract class BuildHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Build>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Build>>() {});
     }
 
     /** 
@@ -1112,7 +1089,7 @@ public abstract class BuildHttpClientBase
      *            
      * @return ArrayList&lt;Build&gt;
      */
-    public ArrayList<Build> getBuilds(
+    public List<Build> getBuilds(
         final List<Integer> definitions, 
         final List<Integer> queues, 
         final String buildNumber, 
@@ -1165,7 +1142,7 @@ public abstract class BuildHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Build>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Build>>() {});
     }
 
     /** 
