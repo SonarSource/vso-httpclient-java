@@ -17,7 +17,6 @@ package com.microsoft.alm.teamfoundation.sourcecontrol.webapi;
 
 import java.io.InputStream;
 import java.net.URI;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -1307,9 +1306,9 @@ public abstract class GitHttpClientBase
      *            Friendly name or guid of repository
      * @param baseVersionDescriptor 
      *            
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranches(
+    public List<GitBranchStats> getBranches(
         final String project, 
         final String repositoryId, 
         final GitVersionDescriptor baseVersionDescriptor) { 
@@ -1331,7 +1330,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1343,9 +1342,9 @@ public abstract class GitHttpClientBase
      *            Friendly name or guid of repository
      * @param baseVersionDescriptor 
      *            
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranches(
+    public List<GitBranchStats> getBranches(
         final String project, 
         final UUID repositoryId, 
         final GitVersionDescriptor baseVersionDescriptor) { 
@@ -1367,7 +1366,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1379,9 +1378,9 @@ public abstract class GitHttpClientBase
      *            Friendly name or guid of repository
      * @param baseVersionDescriptor 
      *            
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranches(
+    public List<GitBranchStats> getBranches(
         final UUID project, 
         final String repositoryId, 
         final GitVersionDescriptor baseVersionDescriptor) { 
@@ -1403,7 +1402,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1415,9 +1414,9 @@ public abstract class GitHttpClientBase
      *            Friendly name or guid of repository
      * @param baseVersionDescriptor 
      *            
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranches(
+    public List<GitBranchStats> getBranches(
         final UUID project, 
         final UUID repositoryId, 
         final GitVersionDescriptor baseVersionDescriptor) { 
@@ -1439,7 +1438,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1449,9 +1448,9 @@ public abstract class GitHttpClientBase
      *            Friendly name or guid of repository
      * @param baseVersionDescriptor 
      *            
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranches(
+    public List<GitBranchStats> getBranches(
         final String repositoryId, 
         final GitVersionDescriptor baseVersionDescriptor) { 
 
@@ -1471,7 +1470,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1481,9 +1480,9 @@ public abstract class GitHttpClientBase
      *            Friendly name or guid of repository
      * @param baseVersionDescriptor 
      *            
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranches(
+    public List<GitBranchStats> getBranches(
         final UUID repositoryId, 
         final GitVersionDescriptor baseVersionDescriptor) { 
 
@@ -1503,7 +1502,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1513,9 +1512,9 @@ public abstract class GitHttpClientBase
      *            
      * @param repositoryId 
      *            Friendly name or guid of repository
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranchStatsBatch(
+    public List<GitBranchStats> getBranchStatsBatch(
         final GitQueryBranchStatsCriteria searchCriteria, 
         final String repositoryId) { 
 
@@ -1533,7 +1532,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1543,9 +1542,9 @@ public abstract class GitHttpClientBase
      *            
      * @param repositoryId 
      *            Friendly name or guid of repository
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranchStatsBatch(
+    public List<GitBranchStats> getBranchStatsBatch(
         final GitQueryBranchStatsCriteria searchCriteria, 
         final UUID repositoryId) { 
 
@@ -1563,7 +1562,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1575,9 +1574,9 @@ public abstract class GitHttpClientBase
      *            Project ID or project name
      * @param repositoryId 
      *            Friendly name or guid of repository
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranchStatsBatch(
+    public List<GitBranchStats> getBranchStatsBatch(
         final GitQueryBranchStatsCriteria searchCriteria, 
         final String project, 
         final String repositoryId) { 
@@ -1597,7 +1596,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1609,9 +1608,9 @@ public abstract class GitHttpClientBase
      *            Project ID or project name
      * @param repositoryId 
      *            Friendly name or guid of repository
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranchStatsBatch(
+    public List<GitBranchStats> getBranchStatsBatch(
         final GitQueryBranchStatsCriteria searchCriteria, 
         final String project, 
         final UUID repositoryId) { 
@@ -1631,7 +1630,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1643,9 +1642,9 @@ public abstract class GitHttpClientBase
      *            Project ID
      * @param repositoryId 
      *            Friendly name or guid of repository
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranchStatsBatch(
+    public List<GitBranchStats> getBranchStatsBatch(
         final GitQueryBranchStatsCriteria searchCriteria, 
         final UUID project, 
         final String repositoryId) { 
@@ -1665,7 +1664,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -1677,9 +1676,9 @@ public abstract class GitHttpClientBase
      *            Project ID
      * @param repositoryId 
      *            Friendly name or guid of repository
-     * @return ArrayList&lt;GitBranchStats&gt;
+     * @return List&lt;GitBranchStats&gt;
      */
-    public ArrayList<GitBranchStats> getBranchStatsBatch(
+    public List<GitBranchStats> getBranchStatsBatch(
         final GitQueryBranchStatsCriteria searchCriteria, 
         final UUID project, 
         final UUID repositoryId) { 
@@ -1699,7 +1698,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitBranchStats>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitBranchStats>>() {});
     }
 
     /** 
@@ -2919,9 +2918,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommits(
+    public List<GitCommitRef> getCommits(
         final String project, 
         final String repositoryId, 
         final GitQueryCommitsCriteria searchCriteria, 
@@ -2947,7 +2946,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -2963,9 +2962,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommits(
+    public List<GitCommitRef> getCommits(
         final String project, 
         final UUID repositoryId, 
         final GitQueryCommitsCriteria searchCriteria, 
@@ -2991,7 +2990,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3007,9 +3006,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommits(
+    public List<GitCommitRef> getCommits(
         final UUID project, 
         final String repositoryId, 
         final GitQueryCommitsCriteria searchCriteria, 
@@ -3035,7 +3034,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3051,9 +3050,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommits(
+    public List<GitCommitRef> getCommits(
         final UUID project, 
         final UUID repositoryId, 
         final GitQueryCommitsCriteria searchCriteria, 
@@ -3079,7 +3078,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3093,9 +3092,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommits(
+    public List<GitCommitRef> getCommits(
         final String repositoryId, 
         final GitQueryCommitsCriteria searchCriteria, 
         final Integer skip, 
@@ -3119,7 +3118,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3133,9 +3132,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommits(
+    public List<GitCommitRef> getCommits(
         final UUID repositoryId, 
         final GitQueryCommitsCriteria searchCriteria, 
         final Integer skip, 
@@ -3159,55 +3158,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
-    }
-
-    /** 
-     * [Preview API 3.1-preview.1] Retrieve a list of commits associated with a particular push.
-     * 
-     * @param project 
-     *            Project ID or project name
-     * @param repositoryId 
-     *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
-     * @param pushId 
-     *            The id of the push.
-     * @param top 
-     *            The maximum number of commits to return (&quot;get the top x commits&quot;).
-     * @param skip 
-     *            The number of commits to skip.
-     * @param includeLinks 
-     *            
-     * @return ArrayList&lt;GitCommitRef&gt;
-     */
-    public ArrayList<GitCommitRef> getPushCommits(
-        final String project, 
-        final String repositoryId, 
-        final int pushId, 
-        final Integer top, 
-        final Integer skip, 
-        final Boolean includeLinks) { 
-
-        final UUID locationId = UUID.fromString("c2570c3b-5b3f-41b8-98bf-5407bfde8d58"); //$NON-NLS-1$
-        final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
-
-        final Map<String, Object> routeValues = new HashMap<String, Object>();
-        routeValues.put("project", project); //$NON-NLS-1$
-        routeValues.put("repositoryId", repositoryId); //$NON-NLS-1$
-
-        final NameValueCollection queryParameters = new NameValueCollection();
-        queryParameters.put("pushId", String.valueOf(pushId)); //$NON-NLS-1$
-        queryParameters.addIfNotNull("top", top); //$NON-NLS-1$
-        queryParameters.addIfNotNull("skip", skip); //$NON-NLS-1$
-        queryParameters.addIfNotNull("includeLinks", includeLinks); //$NON-NLS-1$
-
-        final VssRestRequest httpRequest = super.createRequest(HttpMethod.GET,
-                                                               locationId,
-                                                               routeValues,
-                                                               apiVersion,
-                                                               queryParameters,
-                                                               VssMediaTypes.APPLICATION_JSON_TYPE);
-
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3225,9 +3176,57 @@ public abstract class GitHttpClientBase
      *            The number of commits to skip.
      * @param includeLinks 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPushCommits(
+    public List<GitCommitRef> getPushCommits(
+        final String project, 
+        final String repositoryId, 
+        final int pushId, 
+        final Integer top, 
+        final Integer skip, 
+        final Boolean includeLinks) { 
+
+        final UUID locationId = UUID.fromString("c2570c3b-5b3f-41b8-98bf-5407bfde8d58"); //$NON-NLS-1$
+        final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
+
+        final Map<String, Object> routeValues = new HashMap<String, Object>();
+        routeValues.put("project", project); //$NON-NLS-1$
+        routeValues.put("repositoryId", repositoryId); //$NON-NLS-1$
+
+        final NameValueCollection queryParameters = new NameValueCollection();
+        queryParameters.put("pushId", String.valueOf(pushId)); //$NON-NLS-1$
+        queryParameters.addIfNotNull("top", top); //$NON-NLS-1$
+        queryParameters.addIfNotNull("skip", skip); //$NON-NLS-1$
+        queryParameters.addIfNotNull("includeLinks", includeLinks); //$NON-NLS-1$
+
+        final VssRestRequest httpRequest = super.createRequest(HttpMethod.GET,
+                                                               locationId,
+                                                               routeValues,
+                                                               apiVersion,
+                                                               queryParameters,
+                                                               VssMediaTypes.APPLICATION_JSON_TYPE);
+
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
+    }
+
+    /** 
+     * [Preview API 3.1-preview.1] Retrieve a list of commits associated with a particular push.
+     * 
+     * @param project 
+     *            Project ID or project name
+     * @param repositoryId 
+     *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
+     * @param pushId 
+     *            The id of the push.
+     * @param top 
+     *            The maximum number of commits to return (&quot;get the top x commits&quot;).
+     * @param skip 
+     *            The number of commits to skip.
+     * @param includeLinks 
+     *            
+     * @return List&lt;GitCommitRef&gt;
+     */
+    public List<GitCommitRef> getPushCommits(
         final String project, 
         final UUID repositoryId, 
         final int pushId, 
@@ -3255,7 +3254,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3273,9 +3272,9 @@ public abstract class GitHttpClientBase
      *            The number of commits to skip.
      * @param includeLinks 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPushCommits(
+    public List<GitCommitRef> getPushCommits(
         final UUID project, 
         final String repositoryId, 
         final int pushId, 
@@ -3303,7 +3302,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3321,9 +3320,9 @@ public abstract class GitHttpClientBase
      *            The number of commits to skip.
      * @param includeLinks 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPushCommits(
+    public List<GitCommitRef> getPushCommits(
         final UUID project, 
         final UUID repositoryId, 
         final int pushId, 
@@ -3351,7 +3350,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3367,9 +3366,9 @@ public abstract class GitHttpClientBase
      *            The number of commits to skip.
      * @param includeLinks 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPushCommits(
+    public List<GitCommitRef> getPushCommits(
         final String repositoryId, 
         final int pushId, 
         final Integer top, 
@@ -3395,7 +3394,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3411,9 +3410,9 @@ public abstract class GitHttpClientBase
      *            The number of commits to skip.
      * @param includeLinks 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPushCommits(
+    public List<GitCommitRef> getPushCommits(
         final UUID repositoryId, 
         final int pushId, 
         final Integer top, 
@@ -3439,7 +3438,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3455,9 +3454,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeStatuses 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommitsBatch(
+    public List<GitCommitRef> getCommitsBatch(
         final GitQueryCommitsCriteria searchCriteria, 
         final String repositoryId, 
         final Integer skip, 
@@ -3484,7 +3483,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3500,9 +3499,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeStatuses 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommitsBatch(
+    public List<GitCommitRef> getCommitsBatch(
         final GitQueryCommitsCriteria searchCriteria, 
         final UUID repositoryId, 
         final Integer skip, 
@@ -3529,7 +3528,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3547,9 +3546,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeStatuses 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommitsBatch(
+    public List<GitCommitRef> getCommitsBatch(
         final GitQueryCommitsCriteria searchCriteria, 
         final String project, 
         final String repositoryId, 
@@ -3578,7 +3577,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3596,9 +3595,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeStatuses 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommitsBatch(
+    public List<GitCommitRef> getCommitsBatch(
         final GitQueryCommitsCriteria searchCriteria, 
         final String project, 
         final UUID repositoryId, 
@@ -3627,7 +3626,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3645,9 +3644,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeStatuses 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommitsBatch(
+    public List<GitCommitRef> getCommitsBatch(
         final GitQueryCommitsCriteria searchCriteria, 
         final UUID project, 
         final String repositoryId, 
@@ -3676,7 +3675,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3694,9 +3693,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeStatuses 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getCommitsBatch(
+    public List<GitCommitRef> getCommitsBatch(
         final GitQueryCommitsCriteria searchCriteria, 
         final UUID project, 
         final UUID repositoryId, 
@@ -3725,7 +3724,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -3733,9 +3732,9 @@ public abstract class GitHttpClientBase
      * 
      * @param project 
      *            Project ID or project name
-     * @return ArrayList&lt;GitDeletedRepository&gt;
+     * @return List&lt;GitDeletedRepository&gt;
      */
-    public ArrayList<GitDeletedRepository> getDeletedRepositories(final String project) { 
+    public List<GitDeletedRepository> getDeletedRepositories(final String project) { 
 
         final UUID locationId = UUID.fromString("2b6869c4-cb25-42b5-b7a3-0d3e6be0a11a"); //$NON-NLS-1$
         final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
@@ -3749,7 +3748,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitDeletedRepository>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitDeletedRepository>>() {});
     }
 
     /** 
@@ -3757,9 +3756,9 @@ public abstract class GitHttpClientBase
      * 
      * @param project 
      *            Project ID
-     * @return ArrayList&lt;GitDeletedRepository&gt;
+     * @return List&lt;GitDeletedRepository&gt;
      */
-    public ArrayList<GitDeletedRepository> getDeletedRepositories(final UUID project) { 
+    public List<GitDeletedRepository> getDeletedRepositories(final UUID project) { 
 
         final UUID locationId = UUID.fromString("2b6869c4-cb25-42b5-b7a3-0d3e6be0a11a"); //$NON-NLS-1$
         final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
@@ -3773,7 +3772,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitDeletedRepository>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitDeletedRepository>>() {});
     }
 
     /** 
@@ -4081,9 +4080,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAbandoned 
      *            
-     * @return ArrayList&lt;GitImportRequest&gt;
+     * @return List&lt;GitImportRequest&gt;
      */
-    public ArrayList<GitImportRequest> queryImportRequests(
+    public List<GitImportRequest> queryImportRequests(
         final String project, 
         final String repositoryId, 
         final Boolean includeAbandoned) { 
@@ -4105,7 +4104,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitImportRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitImportRequest>>() {});
     }
 
     /** 
@@ -4117,9 +4116,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAbandoned 
      *            
-     * @return ArrayList&lt;GitImportRequest&gt;
+     * @return List&lt;GitImportRequest&gt;
      */
-    public ArrayList<GitImportRequest> queryImportRequests(
+    public List<GitImportRequest> queryImportRequests(
         final String project, 
         final UUID repositoryId, 
         final Boolean includeAbandoned) { 
@@ -4141,7 +4140,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitImportRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitImportRequest>>() {});
     }
 
     /** 
@@ -4153,9 +4152,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAbandoned 
      *            
-     * @return ArrayList&lt;GitImportRequest&gt;
+     * @return List&lt;GitImportRequest&gt;
      */
-    public ArrayList<GitImportRequest> queryImportRequests(
+    public List<GitImportRequest> queryImportRequests(
         final UUID project, 
         final String repositoryId, 
         final Boolean includeAbandoned) { 
@@ -4177,7 +4176,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitImportRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitImportRequest>>() {});
     }
 
     /** 
@@ -4189,9 +4188,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAbandoned 
      *            
-     * @return ArrayList&lt;GitImportRequest&gt;
+     * @return List&lt;GitImportRequest&gt;
      */
-    public ArrayList<GitImportRequest> queryImportRequests(
+    public List<GitImportRequest> queryImportRequests(
         final UUID project, 
         final UUID repositoryId, 
         final Boolean includeAbandoned) { 
@@ -4213,7 +4212,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitImportRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitImportRequest>>() {});
     }
 
     /** 
@@ -5093,9 +5092,9 @@ public abstract class GitHttpClientBase
      *            
      * @param versionDescriptor 
      *            
-     * @return ArrayList&lt;GitItem&gt;
+     * @return List&lt;GitItem&gt;
      */
-    public ArrayList<GitItem> getItems(
+    public List<GitItem> getItems(
         final String project, 
         final String repositoryId, 
         final String scopePath, 
@@ -5129,7 +5128,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitItem>>() {});
     }
 
     /** 
@@ -5153,9 +5152,9 @@ public abstract class GitHttpClientBase
      *            
      * @param versionDescriptor 
      *            
-     * @return ArrayList&lt;GitItem&gt;
+     * @return List&lt;GitItem&gt;
      */
-    public ArrayList<GitItem> getItems(
+    public List<GitItem> getItems(
         final String project, 
         final UUID repositoryId, 
         final String scopePath, 
@@ -5189,7 +5188,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitItem>>() {});
     }
 
     /** 
@@ -5213,9 +5212,9 @@ public abstract class GitHttpClientBase
      *            
      * @param versionDescriptor 
      *            
-     * @return ArrayList&lt;GitItem&gt;
+     * @return List&lt;GitItem&gt;
      */
-    public ArrayList<GitItem> getItems(
+    public List<GitItem> getItems(
         final UUID project, 
         final String repositoryId, 
         final String scopePath, 
@@ -5249,7 +5248,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitItem>>() {});
     }
 
     /** 
@@ -5273,9 +5272,9 @@ public abstract class GitHttpClientBase
      *            
      * @param versionDescriptor 
      *            
-     * @return ArrayList&lt;GitItem&gt;
+     * @return List&lt;GitItem&gt;
      */
-    public ArrayList<GitItem> getItems(
+    public List<GitItem> getItems(
         final UUID project, 
         final UUID repositoryId, 
         final String scopePath, 
@@ -5309,7 +5308,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitItem>>() {});
     }
 
     /** 
@@ -5331,9 +5330,9 @@ public abstract class GitHttpClientBase
      *            
      * @param versionDescriptor 
      *            
-     * @return ArrayList&lt;GitItem&gt;
+     * @return List&lt;GitItem&gt;
      */
-    public ArrayList<GitItem> getItems(
+    public List<GitItem> getItems(
         final String repositoryId, 
         final String scopePath, 
         final VersionControlRecursionType recursionLevel, 
@@ -5365,7 +5364,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitItem>>() {});
     }
 
     /** 
@@ -5387,9 +5386,9 @@ public abstract class GitHttpClientBase
      *            
      * @param versionDescriptor 
      *            
-     * @return ArrayList&lt;GitItem&gt;
+     * @return List&lt;GitItem&gt;
      */
-    public ArrayList<GitItem> getItems(
+    public List<GitItem> getItems(
         final UUID repositoryId, 
         final String scopePath, 
         final VersionControlRecursionType recursionLevel, 
@@ -5421,7 +5420,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitItem>>() {});
     }
 
     /** 
@@ -6135,9 +6134,9 @@ public abstract class GitHttpClientBase
      *            
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;ArrayList&lt;GitItem&gt;&gt;
+     * @return List&lt;List&lt;GitItem&gt;&gt;
      */
-    public ArrayList<ArrayList<GitItem>> getItemsBatch(
+    public List<List<GitItem>> getItemsBatch(
         final GitItemRequestData requestData, 
         final String repositoryId) { 
 
@@ -6155,7 +6154,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<ArrayList<GitItem>>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<List<GitItem>>>() {});
     }
 
     /** 
@@ -6165,9 +6164,9 @@ public abstract class GitHttpClientBase
      *            
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;ArrayList&lt;GitItem&gt;&gt;
+     * @return List&lt;List&lt;GitItem&gt;&gt;
      */
-    public ArrayList<ArrayList<GitItem>> getItemsBatch(
+    public List<List<GitItem>> getItemsBatch(
         final GitItemRequestData requestData, 
         final UUID repositoryId) { 
 
@@ -6185,7 +6184,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<ArrayList<GitItem>>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<List<GitItem>>>() {});
     }
 
     /** 
@@ -6197,9 +6196,9 @@ public abstract class GitHttpClientBase
      *            Project ID or project name
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;ArrayList&lt;GitItem&gt;&gt;
+     * @return List&lt;List&lt;GitItem&gt;&gt;
      */
-    public ArrayList<ArrayList<GitItem>> getItemsBatch(
+    public List<List<GitItem>> getItemsBatch(
         final GitItemRequestData requestData, 
         final String project, 
         final String repositoryId) { 
@@ -6219,7 +6218,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<ArrayList<GitItem>>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<List<GitItem>>>() {});
     }
 
     /** 
@@ -6231,9 +6230,9 @@ public abstract class GitHttpClientBase
      *            Project ID or project name
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;ArrayList&lt;GitItem&gt;&gt;
+     * @return List&lt;List&lt;GitItem&gt;&gt;
      */
-    public ArrayList<ArrayList<GitItem>> getItemsBatch(
+    public List<List<GitItem>> getItemsBatch(
         final GitItemRequestData requestData, 
         final String project, 
         final UUID repositoryId) { 
@@ -6253,7 +6252,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<ArrayList<GitItem>>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<List<GitItem>>>() {});
     }
 
     /** 
@@ -6265,9 +6264,9 @@ public abstract class GitHttpClientBase
      *            Project ID
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;ArrayList&lt;GitItem&gt;&gt;
+     * @return List&lt;List&lt;GitItem&gt;&gt;
      */
-    public ArrayList<ArrayList<GitItem>> getItemsBatch(
+    public List<List<GitItem>> getItemsBatch(
         final GitItemRequestData requestData, 
         final UUID project, 
         final String repositoryId) { 
@@ -6287,7 +6286,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<ArrayList<GitItem>>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<List<GitItem>>>() {});
     }
 
     /** 
@@ -6299,9 +6298,9 @@ public abstract class GitHttpClientBase
      *            Project ID
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;ArrayList&lt;GitItem&gt;&gt;
+     * @return List&lt;List&lt;GitItem&gt;&gt;
      */
-    public ArrayList<ArrayList<GitItem>> getItemsBatch(
+    public List<List<GitItem>> getItemsBatch(
         final GitItemRequestData requestData, 
         final UUID project, 
         final UUID repositoryId) { 
@@ -6321,7 +6320,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<ArrayList<GitItem>>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<List<GitItem>>>() {});
     }
 
     /** 
@@ -6333,9 +6332,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            Iteration to retrieve commits for
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestIterationCommits(
+    public List<GitCommitRef> getPullRequestIterationCommits(
         final String repositoryId, 
         final int pullRequestId, 
         final int iterationId) { 
@@ -6354,7 +6353,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6366,9 +6365,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            Iteration to retrieve commits for
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestIterationCommits(
+    public List<GitCommitRef> getPullRequestIterationCommits(
         final UUID repositoryId, 
         final int pullRequestId, 
         final int iterationId) { 
@@ -6387,7 +6386,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6401,9 +6400,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            Iteration to retrieve commits for
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestIterationCommits(
+    public List<GitCommitRef> getPullRequestIterationCommits(
         final String project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -6424,7 +6423,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6438,9 +6437,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            Iteration to retrieve commits for
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestIterationCommits(
+    public List<GitCommitRef> getPullRequestIterationCommits(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -6461,7 +6460,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6475,9 +6474,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            Iteration to retrieve commits for
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestIterationCommits(
+    public List<GitCommitRef> getPullRequestIterationCommits(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -6498,7 +6497,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6512,9 +6511,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            Iteration to retrieve commits for
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestIterationCommits(
+    public List<GitCommitRef> getPullRequestIterationCommits(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -6535,7 +6534,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6545,9 +6544,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestCommits(
+    public List<GitCommitRef> getPullRequestCommits(
         final String repositoryId, 
         final int pullRequestId) { 
 
@@ -6564,7 +6563,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6574,9 +6573,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestCommits(
+    public List<GitCommitRef> getPullRequestCommits(
         final UUID repositoryId, 
         final int pullRequestId) { 
 
@@ -6593,7 +6592,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6605,9 +6604,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestCommits(
+    public List<GitCommitRef> getPullRequestCommits(
         final String project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -6626,7 +6625,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6638,9 +6637,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestCommits(
+    public List<GitCommitRef> getPullRequestCommits(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -6659,7 +6658,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6671,9 +6670,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestCommits(
+    public List<GitCommitRef> getPullRequestCommits(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -6692,7 +6691,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6704,9 +6703,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitCommitRef&gt;
+     * @return List&lt;GitCommitRef&gt;
      */
-    public ArrayList<GitCommitRef> getPullRequestCommits(
+    public List<GitCommitRef> getPullRequestCommits(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -6725,7 +6724,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitCommitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitCommitRef>>() {});
     }
 
     /** 
@@ -6957,9 +6956,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeObsolete 
      *            
-     * @return ArrayList&lt;GitConflict&gt;
+     * @return List&lt;GitConflict&gt;
      */
-    public ArrayList<GitConflict> getPullRequestConflicts(
+    public List<GitConflict> getPullRequestConflicts(
         final String project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -6987,7 +6986,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitConflict>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitConflict>>() {});
     }
 
     /** 
@@ -7005,9 +7004,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeObsolete 
      *            
-     * @return ArrayList&lt;GitConflict&gt;
+     * @return List&lt;GitConflict&gt;
      */
-    public ArrayList<GitConflict> getPullRequestConflicts(
+    public List<GitConflict> getPullRequestConflicts(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -7035,7 +7034,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitConflict>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitConflict>>() {});
     }
 
     /** 
@@ -7053,9 +7052,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeObsolete 
      *            
-     * @return ArrayList&lt;GitConflict&gt;
+     * @return List&lt;GitConflict&gt;
      */
-    public ArrayList<GitConflict> getPullRequestConflicts(
+    public List<GitConflict> getPullRequestConflicts(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -7083,7 +7082,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitConflict>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitConflict>>() {});
     }
 
     /** 
@@ -7101,9 +7100,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeObsolete 
      *            
-     * @return ArrayList&lt;GitConflict&gt;
+     * @return List&lt;GitConflict&gt;
      */
-    public ArrayList<GitConflict> getPullRequestConflicts(
+    public List<GitConflict> getPullRequestConflicts(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -7131,7 +7130,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitConflict>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitConflict>>() {});
     }
 
     /** 
@@ -7147,9 +7146,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeObsolete 
      *            
-     * @return ArrayList&lt;GitConflict&gt;
+     * @return List&lt;GitConflict&gt;
      */
-    public ArrayList<GitConflict> getPullRequestConflicts(
+    public List<GitConflict> getPullRequestConflicts(
         final String repositoryId, 
         final int pullRequestId, 
         final Integer skip, 
@@ -7175,7 +7174,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitConflict>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitConflict>>() {});
     }
 
     /** 
@@ -7191,9 +7190,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeObsolete 
      *            
-     * @return ArrayList&lt;GitConflict&gt;
+     * @return List&lt;GitConflict&gt;
      */
-    public ArrayList<GitConflict> getPullRequestConflicts(
+    public List<GitConflict> getPullRequestConflicts(
         final UUID repositoryId, 
         final int pullRequestId, 
         final Integer skip, 
@@ -7219,7 +7218,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitConflict>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitConflict>>() {});
     }
 
     /** 
@@ -7995,7 +7994,7 @@ public abstract class GitHttpClientBase
      *            
      * @param includeCommits 
      *            
-     * @return ArrayList&lt;GitPullRequestIteration&gt;
+     * @return List&lt;GitPullRequestIteration&gt;
      */
     public List<GitPullRequestIteration> getPullRequestIterations(
         final String project, 
@@ -8035,9 +8034,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeCommits 
      *            
-     * @return ArrayList&lt;GitPullRequestIteration&gt;
+     * @return List&lt;GitPullRequestIteration&gt;
      */
-    public ArrayList<GitPullRequestIteration> getPullRequestIterations(
+    public List<GitPullRequestIteration> getPullRequestIterations(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -8061,7 +8060,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestIteration>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestIteration>>() {});
     }
 
     /** 
@@ -8075,9 +8074,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeCommits 
      *            
-     * @return ArrayList&lt;GitPullRequestIteration&gt;
+     * @return List&lt;GitPullRequestIteration&gt;
      */
-    public ArrayList<GitPullRequestIteration> getPullRequestIterations(
+    public List<GitPullRequestIteration> getPullRequestIterations(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -8101,7 +8100,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestIteration>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestIteration>>() {});
     }
 
     /** 
@@ -8115,9 +8114,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeCommits 
      *            
-     * @return ArrayList&lt;GitPullRequestIteration&gt;
+     * @return List&lt;GitPullRequestIteration&gt;
      */
-    public ArrayList<GitPullRequestIteration> getPullRequestIterations(
+    public List<GitPullRequestIteration> getPullRequestIterations(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -8141,7 +8140,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestIteration>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestIteration>>() {});
     }
 
     /** 
@@ -8153,9 +8152,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeCommits 
      *            
-     * @return ArrayList&lt;GitPullRequestIteration&gt;
+     * @return List&lt;GitPullRequestIteration&gt;
      */
-    public ArrayList<GitPullRequestIteration> getPullRequestIterations(
+    public List<GitPullRequestIteration> getPullRequestIterations(
         final String repositoryId, 
         final int pullRequestId, 
         final Boolean includeCommits) { 
@@ -8177,7 +8176,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestIteration>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestIteration>>() {});
     }
 
     /** 
@@ -8189,7 +8188,7 @@ public abstract class GitHttpClientBase
      *            
      * @param includeCommits 
      *            
-     * @return ArrayList&lt;GitPullRequestIteration&gt;
+     * @return List&lt;GitPullRequestIteration&gt;
      */
     public List<GitPullRequestIteration> getPullRequestIterations(
         final UUID repositoryId, 
@@ -8665,9 +8664,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> createPullRequestReviewers(
+    public List<IdentityRefWithVote> createPullRequestReviewers(
         final IdentityRef[] reviewers, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -8687,7 +8686,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -8699,9 +8698,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> createPullRequestReviewers(
+    public List<IdentityRefWithVote> createPullRequestReviewers(
         final IdentityRef[] reviewers, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -8721,45 +8720,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
-    }
-
-    /** 
-     * [Preview API 3.1-preview.1] Adds reviewers to a git pull request
-     * 
-     * @param reviewers 
-     *            
-     * @param project 
-     *            Project ID or project name
-     * @param repositoryId 
-     *            
-     * @param pullRequestId 
-     *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
-     */
-    public ArrayList<IdentityRefWithVote> createPullRequestReviewers(
-        final IdentityRef[] reviewers, 
-        final String project, 
-        final String repositoryId, 
-        final int pullRequestId) { 
-
-        final UUID locationId = UUID.fromString("4b6702c7-aa35-4b89-9c96-b9abf6d3e540"); //$NON-NLS-1$
-        final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
-
-        final Map<String, Object> routeValues = new HashMap<String, Object>();
-        routeValues.put("project", project); //$NON-NLS-1$
-        routeValues.put("repositoryId", repositoryId); //$NON-NLS-1$
-        routeValues.put("pullRequestId", pullRequestId); //$NON-NLS-1$
-
-        final VssRestRequest httpRequest = super.createRequest(HttpMethod.POST,
-                                                               locationId,
-                                                               routeValues,
-                                                               apiVersion,
-                                                               reviewers,
-                                                               VssMediaTypes.APPLICATION_JSON_TYPE,
-                                                               VssMediaTypes.APPLICATION_JSON_TYPE);
-
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -8773,9 +8734,47 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> createPullRequestReviewers(
+    public List<IdentityRefWithVote> createPullRequestReviewers(
+        final IdentityRef[] reviewers, 
+        final String project, 
+        final String repositoryId, 
+        final int pullRequestId) { 
+
+        final UUID locationId = UUID.fromString("4b6702c7-aa35-4b89-9c96-b9abf6d3e540"); //$NON-NLS-1$
+        final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
+
+        final Map<String, Object> routeValues = new HashMap<String, Object>();
+        routeValues.put("project", project); //$NON-NLS-1$
+        routeValues.put("repositoryId", repositoryId); //$NON-NLS-1$
+        routeValues.put("pullRequestId", pullRequestId); //$NON-NLS-1$
+
+        final VssRestRequest httpRequest = super.createRequest(HttpMethod.POST,
+                                                               locationId,
+                                                               routeValues,
+                                                               apiVersion,
+                                                               reviewers,
+                                                               VssMediaTypes.APPLICATION_JSON_TYPE,
+                                                               VssMediaTypes.APPLICATION_JSON_TYPE);
+
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
+    }
+
+    /** 
+     * [Preview API 3.1-preview.1] Adds reviewers to a git pull request
+     * 
+     * @param reviewers 
+     *            
+     * @param project 
+     *            Project ID or project name
+     * @param repositoryId 
+     *            
+     * @param pullRequestId 
+     *            
+     * @return List&lt;IdentityRefWithVote&gt;
+     */
+    public List<IdentityRefWithVote> createPullRequestReviewers(
         final IdentityRef[] reviewers, 
         final String project, 
         final UUID repositoryId, 
@@ -8797,7 +8796,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -8811,9 +8810,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> createPullRequestReviewers(
+    public List<IdentityRefWithVote> createPullRequestReviewers(
         final IdentityRef[] reviewers, 
         final UUID project, 
         final String repositoryId, 
@@ -8835,7 +8834,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -8849,9 +8848,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> createPullRequestReviewers(
+    public List<IdentityRefWithVote> createPullRequestReviewers(
         final IdentityRef[] reviewers, 
         final UUID project, 
         final UUID repositoryId, 
@@ -8873,7 +8872,7 @@ public abstract class GitHttpClientBase
                                                                VssMediaTypes.APPLICATION_JSON_TYPE,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9305,9 +9304,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> getPullRequestReviewers(
+    public List<IdentityRefWithVote> getPullRequestReviewers(
         final String repositoryId, 
         final int pullRequestId) { 
 
@@ -9324,7 +9323,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9334,9 +9333,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> getPullRequestReviewers(
+    public List<IdentityRefWithVote> getPullRequestReviewers(
         final UUID repositoryId, 
         final int pullRequestId) { 
 
@@ -9353,7 +9352,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9365,9 +9364,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> getPullRequestReviewers(
+    public List<IdentityRefWithVote> getPullRequestReviewers(
         final String project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -9386,7 +9385,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9398,9 +9397,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> getPullRequestReviewers(
+    public List<IdentityRefWithVote> getPullRequestReviewers(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -9419,7 +9418,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9431,9 +9430,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> getPullRequestReviewers(
+    public List<IdentityRefWithVote> getPullRequestReviewers(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -9452,7 +9451,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9464,9 +9463,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;IdentityRefWithVote&gt;
+     * @return List&lt;IdentityRefWithVote&gt;
      */
-    public ArrayList<IdentityRefWithVote> getPullRequestReviewers(
+    public List<IdentityRefWithVote> getPullRequestReviewers(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -9485,7 +9484,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<IdentityRefWithVote>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<IdentityRefWithVote>>() {});
     }
 
     /** 
@@ -9525,9 +9524,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequestsByProject(
+    public List<GitPullRequest> getPullRequestsByProject(
         final String project, 
         final GitPullRequestSearchCriteria searchCriteria, 
         final Integer maxCommentLength, 
@@ -9553,7 +9552,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -9569,9 +9568,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequestsByProject(
+    public List<GitPullRequest> getPullRequestsByProject(
         final UUID project, 
         final GitPullRequestSearchCriteria searchCriteria, 
         final Integer maxCommentLength, 
@@ -9597,7 +9596,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -10181,9 +10180,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequests(
+    public List<GitPullRequest> getPullRequests(
         final String project, 
         final String repositoryId, 
         final GitPullRequestSearchCriteria searchCriteria, 
@@ -10211,7 +10210,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -10229,9 +10228,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequests(
+    public List<GitPullRequest> getPullRequests(
         final String project, 
         final UUID repositoryId, 
         final GitPullRequestSearchCriteria searchCriteria, 
@@ -10259,7 +10258,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -10277,9 +10276,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequests(
+    public List<GitPullRequest> getPullRequests(
         final UUID project, 
         final String repositoryId, 
         final GitPullRequestSearchCriteria searchCriteria, 
@@ -10307,7 +10306,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -10325,9 +10324,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequests(
+    public List<GitPullRequest> getPullRequests(
         final UUID project, 
         final UUID repositoryId, 
         final GitPullRequestSearchCriteria searchCriteria, 
@@ -10355,7 +10354,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -10371,9 +10370,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequests(
+    public List<GitPullRequest> getPullRequests(
         final String repositoryId, 
         final GitPullRequestSearchCriteria searchCriteria, 
         final Integer maxCommentLength, 
@@ -10399,7 +10398,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -10415,9 +10414,9 @@ public abstract class GitHttpClientBase
      *            
      * @param top 
      *            
-     * @return ArrayList&lt;GitPullRequest&gt;
+     * @return List&lt;GitPullRequest&gt;
      */
-    public ArrayList<GitPullRequest> getPullRequests(
+    public List<GitPullRequest> getPullRequests(
         final UUID repositoryId, 
         final GitPullRequestSearchCriteria searchCriteria, 
         final Integer maxCommentLength, 
@@ -10443,7 +10442,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequest>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequest>>() {});
     }
 
     /** 
@@ -11157,9 +11156,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestIterationStatuses(
+    public List<GitPullRequestStatus> getPullRequestIterationStatuses(
         final String repositoryId, 
         final int pullRequestId, 
         final int iterationId) { 
@@ -11178,7 +11177,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11190,9 +11189,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestIterationStatuses(
+    public List<GitPullRequestStatus> getPullRequestIterationStatuses(
         final UUID repositoryId, 
         final int pullRequestId, 
         final int iterationId) { 
@@ -11211,44 +11210,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
-    }
-
-    /** 
-     * [Preview API 3.1-preview.1] Get all the statuses associated with a pull request iteration.
-     * 
-     * @param project 
-     *            Project ID or project name
-     * @param repositoryId 
-     *            
-     * @param pullRequestId 
-     *            
-     * @param iterationId 
-     *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
-     */
-    public ArrayList<GitPullRequestStatus> getPullRequestIterationStatuses(
-        final String project, 
-        final String repositoryId, 
-        final int pullRequestId, 
-        final int iterationId) { 
-
-        final UUID locationId = UUID.fromString("75cf11c5-979f-4038-a76e-058a06adf2bf"); //$NON-NLS-1$
-        final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
-
-        final Map<String, Object> routeValues = new HashMap<String, Object>();
-        routeValues.put("project", project); //$NON-NLS-1$
-        routeValues.put("repositoryId", repositoryId); //$NON-NLS-1$
-        routeValues.put("pullRequestId", pullRequestId); //$NON-NLS-1$
-        routeValues.put("iterationId", iterationId); //$NON-NLS-1$
-
-        final VssRestRequest httpRequest = super.createRequest(HttpMethod.GET,
-                                                               locationId,
-                                                               routeValues,
-                                                               apiVersion,
-                                                               VssMediaTypes.APPLICATION_JSON_TYPE);
-
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11262,9 +11224,46 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestIterationStatuses(
+    public List<GitPullRequestStatus> getPullRequestIterationStatuses(
+        final String project, 
+        final String repositoryId, 
+        final int pullRequestId, 
+        final int iterationId) { 
+
+        final UUID locationId = UUID.fromString("75cf11c5-979f-4038-a76e-058a06adf2bf"); //$NON-NLS-1$
+        final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
+
+        final Map<String, Object> routeValues = new HashMap<String, Object>();
+        routeValues.put("project", project); //$NON-NLS-1$
+        routeValues.put("repositoryId", repositoryId); //$NON-NLS-1$
+        routeValues.put("pullRequestId", pullRequestId); //$NON-NLS-1$
+        routeValues.put("iterationId", iterationId); //$NON-NLS-1$
+
+        final VssRestRequest httpRequest = super.createRequest(HttpMethod.GET,
+                                                               locationId,
+                                                               routeValues,
+                                                               apiVersion,
+                                                               VssMediaTypes.APPLICATION_JSON_TYPE);
+
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
+    }
+
+    /** 
+     * [Preview API 3.1-preview.1] Get all the statuses associated with a pull request iteration.
+     * 
+     * @param project 
+     *            Project ID or project name
+     * @param repositoryId 
+     *            
+     * @param pullRequestId 
+     *            
+     * @param iterationId 
+     *            
+     * @return List&lt;GitPullRequestStatus&gt;
+     */
+    public List<GitPullRequestStatus> getPullRequestIterationStatuses(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -11285,7 +11284,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11299,9 +11298,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestIterationStatuses(
+    public List<GitPullRequestStatus> getPullRequestIterationStatuses(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -11322,7 +11321,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11336,9 +11335,9 @@ public abstract class GitHttpClientBase
      *            
      * @param iterationId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestIterationStatuses(
+    public List<GitPullRequestStatus> getPullRequestIterationStatuses(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -11359,7 +11358,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11803,9 +11802,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestStatuses(
+    public List<GitPullRequestStatus> getPullRequestStatuses(
         final String repositoryId, 
         final int pullRequestId) { 
 
@@ -11822,7 +11821,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11832,9 +11831,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestStatuses(
+    public List<GitPullRequestStatus> getPullRequestStatuses(
         final UUID repositoryId, 
         final int pullRequestId) { 
 
@@ -11851,7 +11850,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11863,9 +11862,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestStatuses(
+    public List<GitPullRequestStatus> getPullRequestStatuses(
         final String project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -11884,7 +11883,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11896,9 +11895,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestStatuses(
+    public List<GitPullRequestStatus> getPullRequestStatuses(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -11917,7 +11916,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11929,9 +11928,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestStatuses(
+    public List<GitPullRequestStatus> getPullRequestStatuses(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -11950,7 +11949,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -11962,9 +11961,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;GitPullRequestStatus&gt;
+     * @return List&lt;GitPullRequestStatus&gt;
      */
-    public ArrayList<GitPullRequestStatus> getPullRequestStatuses(
+    public List<GitPullRequestStatus> getPullRequestStatuses(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -11983,7 +11982,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestStatus>>() {});
     }
 
     /** 
@@ -12709,9 +12708,9 @@ public abstract class GitHttpClientBase
      *            
      * @param threadId 
      *            
-     * @return ArrayList&lt;Comment&gt;
+     * @return List&lt;Comment&gt;
      */
-    public ArrayList<Comment> getComments(
+    public List<Comment> getComments(
         final String repositoryId, 
         final int pullRequestId, 
         final int threadId) { 
@@ -12730,7 +12729,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Comment>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Comment>>() {});
     }
 
     /** 
@@ -12742,9 +12741,9 @@ public abstract class GitHttpClientBase
      *            
      * @param threadId 
      *            
-     * @return ArrayList&lt;Comment&gt;
+     * @return List&lt;Comment&gt;
      */
-    public ArrayList<Comment> getComments(
+    public List<Comment> getComments(
         final UUID repositoryId, 
         final int pullRequestId, 
         final int threadId) { 
@@ -12763,7 +12762,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Comment>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Comment>>() {});
     }
 
     /** 
@@ -12777,9 +12776,9 @@ public abstract class GitHttpClientBase
      *            
      * @param threadId 
      *            
-     * @return ArrayList&lt;Comment&gt;
+     * @return List&lt;Comment&gt;
      */
-    public ArrayList<Comment> getComments(
+    public List<Comment> getComments(
         final String project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -12800,7 +12799,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Comment>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Comment>>() {});
     }
 
     /** 
@@ -12814,9 +12813,9 @@ public abstract class GitHttpClientBase
      *            
      * @param threadId 
      *            
-     * @return ArrayList&lt;Comment&gt;
+     * @return List&lt;Comment&gt;
      */
-    public ArrayList<Comment> getComments(
+    public List<Comment> getComments(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -12837,7 +12836,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Comment>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Comment>>() {});
     }
 
     /** 
@@ -12851,9 +12850,9 @@ public abstract class GitHttpClientBase
      *            
      * @param threadId 
      *            
-     * @return ArrayList&lt;Comment&gt;
+     * @return List&lt;Comment&gt;
      */
-    public ArrayList<Comment> getComments(
+    public List<Comment> getComments(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -12874,7 +12873,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Comment>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Comment>>() {});
     }
 
     /** 
@@ -12888,9 +12887,9 @@ public abstract class GitHttpClientBase
      *            
      * @param threadId 
      *            
-     * @return ArrayList&lt;Comment&gt;
+     * @return List&lt;Comment&gt;
      */
-    public ArrayList<Comment> getComments(
+    public List<Comment> getComments(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -12911,7 +12910,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<Comment>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<Comment>>() {});
     }
 
     /** 
@@ -13695,7 +13694,7 @@ public abstract class GitHttpClientBase
      *            
      * @param baseIteration 
      *            
-     * @return ArrayList&lt;GitPullRequestCommentThread&gt;
+     * @return List&lt;GitPullRequestCommentThread&gt;
      */
     public List<GitPullRequestCommentThread> getThreads(
         final String project, 
@@ -13739,9 +13738,9 @@ public abstract class GitHttpClientBase
      *            
      * @param baseIteration 
      *            
-     * @return ArrayList&lt;GitPullRequestCommentThread&gt;
+     * @return List&lt;GitPullRequestCommentThread&gt;
      */
-    public ArrayList<GitPullRequestCommentThread> getThreads(
+    public List<GitPullRequestCommentThread> getThreads(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -13767,7 +13766,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestCommentThread>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestCommentThread>>() {});
     }
 
     /** 
@@ -13783,9 +13782,9 @@ public abstract class GitHttpClientBase
      *            
      * @param baseIteration 
      *            
-     * @return ArrayList&lt;GitPullRequestCommentThread&gt;
+     * @return List&lt;GitPullRequestCommentThread&gt;
      */
-    public ArrayList<GitPullRequestCommentThread> getThreads(
+    public List<GitPullRequestCommentThread> getThreads(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId, 
@@ -13811,7 +13810,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestCommentThread>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestCommentThread>>() {});
     }
 
     /** 
@@ -13827,9 +13826,9 @@ public abstract class GitHttpClientBase
      *            
      * @param baseIteration 
      *            
-     * @return ArrayList&lt;GitPullRequestCommentThread&gt;
+     * @return List&lt;GitPullRequestCommentThread&gt;
      */
-    public ArrayList<GitPullRequestCommentThread> getThreads(
+    public List<GitPullRequestCommentThread> getThreads(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId, 
@@ -13855,7 +13854,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestCommentThread>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestCommentThread>>() {});
     }
 
     /** 
@@ -13869,9 +13868,9 @@ public abstract class GitHttpClientBase
      *            
      * @param baseIteration 
      *            
-     * @return ArrayList&lt;GitPullRequestCommentThread&gt;
+     * @return List&lt;GitPullRequestCommentThread&gt;
      */
-    public ArrayList<GitPullRequestCommentThread> getThreads(
+    public List<GitPullRequestCommentThread> getThreads(
         final String repositoryId, 
         final int pullRequestId, 
         final Integer iteration, 
@@ -13895,7 +13894,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPullRequestCommentThread>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPullRequestCommentThread>>() {});
     }
 
     /** 
@@ -13909,7 +13908,7 @@ public abstract class GitHttpClientBase
      *            
      * @param baseIteration 
      *            
-     * @return ArrayList&lt;GitPullRequestCommentThread&gt;
+     * @return List&lt;GitPullRequestCommentThread&gt;
      */
     public List<GitPullRequestCommentThread> getThreads(
         final UUID repositoryId, 
@@ -14189,9 +14188,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;AssociatedWorkItem&gt;
+     * @return List&lt;AssociatedWorkItem&gt;
      */
-    public ArrayList<AssociatedWorkItem> getPullRequestWorkItems(
+    public List<AssociatedWorkItem> getPullRequestWorkItems(
         final String repositoryId, 
         final int pullRequestId) { 
 
@@ -14208,7 +14207,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<AssociatedWorkItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<AssociatedWorkItem>>() {});
     }
 
     /** 
@@ -14218,9 +14217,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;AssociatedWorkItem&gt;
+     * @return List&lt;AssociatedWorkItem&gt;
      */
-    public ArrayList<AssociatedWorkItem> getPullRequestWorkItems(
+    public List<AssociatedWorkItem> getPullRequestWorkItems(
         final UUID repositoryId, 
         final int pullRequestId) { 
 
@@ -14237,7 +14236,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<AssociatedWorkItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<AssociatedWorkItem>>() {});
     }
 
     /** 
@@ -14249,9 +14248,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;AssociatedWorkItem&gt;
+     * @return List&lt;AssociatedWorkItem&gt;
      */
-    public ArrayList<AssociatedWorkItem> getPullRequestWorkItems(
+    public List<AssociatedWorkItem> getPullRequestWorkItems(
         final String project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -14270,7 +14269,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<AssociatedWorkItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<AssociatedWorkItem>>() {});
     }
 
     /** 
@@ -14282,9 +14281,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;AssociatedWorkItem&gt;
+     * @return List&lt;AssociatedWorkItem&gt;
      */
-    public ArrayList<AssociatedWorkItem> getPullRequestWorkItems(
+    public List<AssociatedWorkItem> getPullRequestWorkItems(
         final String project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -14303,7 +14302,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<AssociatedWorkItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<AssociatedWorkItem>>() {});
     }
 
     /** 
@@ -14315,9 +14314,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;AssociatedWorkItem&gt;
+     * @return List&lt;AssociatedWorkItem&gt;
      */
-    public ArrayList<AssociatedWorkItem> getPullRequestWorkItems(
+    public List<AssociatedWorkItem> getPullRequestWorkItems(
         final UUID project, 
         final String repositoryId, 
         final int pullRequestId) { 
@@ -14336,7 +14335,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<AssociatedWorkItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<AssociatedWorkItem>>() {});
     }
 
     /** 
@@ -14348,9 +14347,9 @@ public abstract class GitHttpClientBase
      *            
      * @param pullRequestId 
      *            
-     * @return ArrayList&lt;AssociatedWorkItem&gt;
+     * @return List&lt;AssociatedWorkItem&gt;
      */
-    public ArrayList<AssociatedWorkItem> getPullRequestWorkItems(
+    public List<AssociatedWorkItem> getPullRequestWorkItems(
         final UUID project, 
         final UUID repositoryId, 
         final int pullRequestId) { 
@@ -14369,7 +14368,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<AssociatedWorkItem>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<AssociatedWorkItem>>() {});
     }
 
     /** 
@@ -14837,9 +14836,9 @@ public abstract class GitHttpClientBase
      *            
      * @param searchCriteria 
      *            
-     * @return ArrayList&lt;GitPush&gt;
+     * @return List&lt;GitPush&gt;
      */
-    public ArrayList<GitPush> getPushes(
+    public List<GitPush> getPushes(
         final String project, 
         final String repositoryId, 
         final Integer skip, 
@@ -14865,7 +14864,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPush>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPush>>() {});
     }
 
     /** 
@@ -14881,9 +14880,9 @@ public abstract class GitHttpClientBase
      *            
      * @param searchCriteria 
      *            
-     * @return ArrayList&lt;GitPush&gt;
+     * @return List&lt;GitPush&gt;
      */
-    public ArrayList<GitPush> getPushes(
+    public List<GitPush> getPushes(
         final String project, 
         final UUID repositoryId, 
         final Integer skip, 
@@ -14909,7 +14908,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPush>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPush>>() {});
     }
 
     /** 
@@ -14925,9 +14924,9 @@ public abstract class GitHttpClientBase
      *            
      * @param searchCriteria 
      *            
-     * @return ArrayList&lt;GitPush&gt;
+     * @return List&lt;GitPush&gt;
      */
-    public ArrayList<GitPush> getPushes(
+    public List<GitPush> getPushes(
         final UUID project, 
         final String repositoryId, 
         final Integer skip, 
@@ -14953,7 +14952,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPush>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPush>>() {});
     }
 
     /** 
@@ -14969,9 +14968,9 @@ public abstract class GitHttpClientBase
      *            
      * @param searchCriteria 
      *            
-     * @return ArrayList&lt;GitPush&gt;
+     * @return List&lt;GitPush&gt;
      */
-    public ArrayList<GitPush> getPushes(
+    public List<GitPush> getPushes(
         final UUID project, 
         final UUID repositoryId, 
         final Integer skip, 
@@ -14997,7 +14996,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPush>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPush>>() {});
     }
 
     /** 
@@ -15011,9 +15010,9 @@ public abstract class GitHttpClientBase
      *            
      * @param searchCriteria 
      *            
-     * @return ArrayList&lt;GitPush&gt;
+     * @return List&lt;GitPush&gt;
      */
-    public ArrayList<GitPush> getPushes(
+    public List<GitPush> getPushes(
         final String repositoryId, 
         final Integer skip, 
         final Integer top, 
@@ -15037,7 +15036,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPush>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPush>>() {});
     }
 
     /** 
@@ -15051,9 +15050,9 @@ public abstract class GitHttpClientBase
      *            
      * @param searchCriteria 
      *            
-     * @return ArrayList&lt;GitPush&gt;
+     * @return List&lt;GitPush&gt;
      */
-    public ArrayList<GitPush> getPushes(
+    public List<GitPush> getPushes(
         final UUID repositoryId, 
         final Integer skip, 
         final Integer top, 
@@ -15077,7 +15076,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitPush>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitPush>>() {});
     }
 
     /** 
@@ -15225,9 +15224,9 @@ public abstract class GitHttpClientBase
      *            [optional] Specifies if referenceLinks should be included in the result. default is false.
      * @param latestStatusesOnly 
      *            
-     * @return ArrayList&lt;GitRef&gt;
+     * @return List&lt;GitRef&gt;
      */
-    public ArrayList<GitRef> getRefs(
+    public List<GitRef> getRefs(
         final String project, 
         final String repositoryId, 
         final String filter, 
@@ -15253,7 +15252,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRef>>() {});
     }
 
     /** 
@@ -15269,9 +15268,9 @@ public abstract class GitHttpClientBase
      *            [optional] Specifies if referenceLinks should be included in the result. default is false.
      * @param latestStatusesOnly 
      *            
-     * @return ArrayList&lt;GitRef&gt;
+     * @return List&lt;GitRef&gt;
      */
-    public ArrayList<GitRef> getRefs(
+    public List<GitRef> getRefs(
         final String project, 
         final UUID repositoryId, 
         final String filter, 
@@ -15297,7 +15296,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRef>>() {});
     }
 
     /** 
@@ -15313,9 +15312,9 @@ public abstract class GitHttpClientBase
      *            [optional] Specifies if referenceLinks should be included in the result. default is false.
      * @param latestStatusesOnly 
      *            
-     * @return ArrayList&lt;GitRef&gt;
+     * @return List&lt;GitRef&gt;
      */
-    public ArrayList<GitRef> getRefs(
+    public List<GitRef> getRefs(
         final UUID project, 
         final String repositoryId, 
         final String filter, 
@@ -15341,7 +15340,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRef>>() {});
     }
 
     /** 
@@ -15357,9 +15356,9 @@ public abstract class GitHttpClientBase
      *            [optional] Specifies if referenceLinks should be included in the result. default is false.
      * @param latestStatusesOnly 
      *            
-     * @return ArrayList&lt;GitRef&gt;
+     * @return List&lt;GitRef&gt;
      */
-    public ArrayList<GitRef> getRefs(
+    public List<GitRef> getRefs(
         final UUID project, 
         final UUID repositoryId, 
         final String filter, 
@@ -15385,7 +15384,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRef>>() {});
     }
 
     /** 
@@ -15399,9 +15398,9 @@ public abstract class GitHttpClientBase
      *            [optional] Specifies if referenceLinks should be included in the result. default is false.
      * @param latestStatusesOnly 
      *            
-     * @return ArrayList&lt;GitRef&gt;
+     * @return List&lt;GitRef&gt;
      */
-    public ArrayList<GitRef> getRefs(
+    public List<GitRef> getRefs(
         final String repositoryId, 
         final String filter, 
         final Boolean includeLinks, 
@@ -15425,7 +15424,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRef>>() {});
     }
 
     /** 
@@ -15439,9 +15438,9 @@ public abstract class GitHttpClientBase
      *            [optional] Specifies if referenceLinks should be included in the result. default is false.
      * @param latestStatusesOnly 
      *            
-     * @return ArrayList&lt;GitRef&gt;
+     * @return List&lt;GitRef&gt;
      */
-    public ArrayList<GitRef> getRefs(
+    public List<GitRef> getRefs(
         final UUID repositoryId, 
         final String filter, 
         final Boolean includeLinks, 
@@ -15465,7 +15464,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRef>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRef>>() {});
     }
 
     /** 
@@ -15477,9 +15476,9 @@ public abstract class GitHttpClientBase
      *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
      * @param projectId 
      *            The id of the project.
-     * @return ArrayList&lt;GitRefUpdateResult&gt;
+     * @return List&lt;GitRefUpdateResult&gt;
      */
-    public ArrayList<GitRefUpdateResult> updateRefs(
+    public List<GitRefUpdateResult> updateRefs(
         final List<GitRefUpdate> refUpdates, 
         final String repositoryId, 
         final String projectId) { 
@@ -15502,7 +15501,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefUpdateResult>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefUpdateResult>>() {});
     }
 
     /** 
@@ -15514,9 +15513,9 @@ public abstract class GitHttpClientBase
      *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
      * @param projectId 
      *            The id of the project.
-     * @return ArrayList&lt;GitRefUpdateResult&gt;
+     * @return List&lt;GitRefUpdateResult&gt;
      */
-    public ArrayList<GitRefUpdateResult> updateRefs(
+    public List<GitRefUpdateResult> updateRefs(
         final List<GitRefUpdate> refUpdates, 
         final UUID repositoryId, 
         final String projectId) { 
@@ -15539,7 +15538,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefUpdateResult>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefUpdateResult>>() {});
     }
 
     /** 
@@ -15553,9 +15552,9 @@ public abstract class GitHttpClientBase
      *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
      * @param projectId 
      *            The id of the project.
-     * @return ArrayList&lt;GitRefUpdateResult&gt;
+     * @return List&lt;GitRefUpdateResult&gt;
      */
-    public ArrayList<GitRefUpdateResult> updateRefs(
+    public List<GitRefUpdateResult> updateRefs(
         final List<GitRefUpdate> refUpdates, 
         final String project, 
         final String repositoryId, 
@@ -15580,7 +15579,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefUpdateResult>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefUpdateResult>>() {});
     }
 
     /** 
@@ -15594,9 +15593,9 @@ public abstract class GitHttpClientBase
      *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
      * @param projectId 
      *            The id of the project.
-     * @return ArrayList&lt;GitRefUpdateResult&gt;
+     * @return List&lt;GitRefUpdateResult&gt;
      */
-    public ArrayList<GitRefUpdateResult> updateRefs(
+    public List<GitRefUpdateResult> updateRefs(
         final List<GitRefUpdate> refUpdates, 
         final String project, 
         final UUID repositoryId, 
@@ -15621,7 +15620,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefUpdateResult>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefUpdateResult>>() {});
     }
 
     /** 
@@ -15635,9 +15634,9 @@ public abstract class GitHttpClientBase
      *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
      * @param projectId 
      *            The id of the project.
-     * @return ArrayList&lt;GitRefUpdateResult&gt;
+     * @return List&lt;GitRefUpdateResult&gt;
      */
-    public ArrayList<GitRefUpdateResult> updateRefs(
+    public List<GitRefUpdateResult> updateRefs(
         final List<GitRefUpdate> refUpdates, 
         final UUID project, 
         final String repositoryId, 
@@ -15662,7 +15661,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefUpdateResult>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefUpdateResult>>() {});
     }
 
     /** 
@@ -15676,9 +15675,9 @@ public abstract class GitHttpClientBase
      *            The id or friendly name of the repository. To use the friendly name, projectId must also be specified.
      * @param projectId 
      *            The id of the project.
-     * @return ArrayList&lt;GitRefUpdateResult&gt;
+     * @return List&lt;GitRefUpdateResult&gt;
      */
-    public ArrayList<GitRefUpdateResult> updateRefs(
+    public List<GitRefUpdateResult> updateRefs(
         final List<GitRefUpdate> refUpdates, 
         final UUID project, 
         final UUID repositoryId, 
@@ -15703,7 +15702,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefUpdateResult>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefUpdateResult>>() {});
     }
 
     /** 
@@ -15889,9 +15888,9 @@ public abstract class GitHttpClientBase
      *            The id of the repository.
      * @param identityId 
      *            The id of the identity whose favorites are to be retrieved. If null, the requesting identity is used.
-     * @return ArrayList&lt;GitRefFavorite&gt;
+     * @return List&lt;GitRefFavorite&gt;
      */
-    public ArrayList<GitRefFavorite> getRefFavorites(
+    public List<GitRefFavorite> getRefFavorites(
         final String project, 
         final String repositoryId, 
         final String identityId) { 
@@ -15913,7 +15912,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefFavorite>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefFavorite>>() {});
     }
 
     /** 
@@ -15925,9 +15924,9 @@ public abstract class GitHttpClientBase
      *            The id of the repository.
      * @param identityId 
      *            The id of the identity whose favorites are to be retrieved. If null, the requesting identity is used.
-     * @return ArrayList&lt;GitRefFavorite&gt;
+     * @return List&lt;GitRefFavorite&gt;
      */
-    public ArrayList<GitRefFavorite> getRefFavorites(
+    public List<GitRefFavorite> getRefFavorites(
         final UUID project, 
         final String repositoryId, 
         final String identityId) { 
@@ -15949,7 +15948,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRefFavorite>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRefFavorite>>() {});
     }
 
     /** 
@@ -16122,7 +16121,7 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAllUrls 
      *            
-     * @return ArrayList&lt;GitRepository&gt;
+     * @return List&lt;GitRepository&gt;
      */
     public List<GitRepository> getRepositories(
         final String project, 
@@ -16158,9 +16157,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAllUrls 
      *            
-     * @return ArrayList&lt;GitRepository&gt;
+     * @return List&lt;GitRepository&gt;
      */
-    public ArrayList<GitRepository> getRepositories(
+    public List<GitRepository> getRepositories(
         final UUID project, 
         final Boolean includeLinks, 
         final Boolean includeAllUrls) { 
@@ -16182,7 +16181,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRepository>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRepository>>() {});
     }
 
     /** 
@@ -16192,9 +16191,9 @@ public abstract class GitHttpClientBase
      *            
      * @param includeAllUrls 
      *            
-     * @return ArrayList&lt;GitRepository&gt;
+     * @return List&lt;GitRepository&gt;
      */
-    public ArrayList<GitRepository> getRepositories(
+    public List<GitRepository> getRepositories(
         final Boolean includeLinks, 
         final Boolean includeAllUrls) { 
 
@@ -16211,7 +16210,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitRepository>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitRepository>>() {});
     }
 
     /** 
@@ -17123,9 +17122,9 @@ public abstract class GitHttpClientBase
      *            
      * @param latestOnly 
      *            
-     * @return ArrayList&lt;GitStatus&gt;
+     * @return List&lt;GitStatus&gt;
      */
-    public ArrayList<GitStatus> getStatuses(
+    public List<GitStatus> getStatuses(
         final String project, 
         final String commitId, 
         final String repositoryId, 
@@ -17153,7 +17152,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitStatus>>() {});
     }
 
     /** 
@@ -17171,9 +17170,9 @@ public abstract class GitHttpClientBase
      *            
      * @param latestOnly 
      *            
-     * @return ArrayList&lt;GitStatus&gt;
+     * @return List&lt;GitStatus&gt;
      */
-    public ArrayList<GitStatus> getStatuses(
+    public List<GitStatus> getStatuses(
         final String project, 
         final String commitId, 
         final UUID repositoryId, 
@@ -17201,7 +17200,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitStatus>>() {});
     }
 
     /** 
@@ -17219,9 +17218,9 @@ public abstract class GitHttpClientBase
      *            
      * @param latestOnly 
      *            
-     * @return ArrayList&lt;GitStatus&gt;
+     * @return List&lt;GitStatus&gt;
      */
-    public ArrayList<GitStatus> getStatuses(
+    public List<GitStatus> getStatuses(
         final UUID project, 
         final String commitId, 
         final String repositoryId, 
@@ -17249,7 +17248,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitStatus>>() {});
     }
 
     /** 
@@ -17267,9 +17266,9 @@ public abstract class GitHttpClientBase
      *            
      * @param latestOnly 
      *            
-     * @return ArrayList&lt;GitStatus&gt;
+     * @return List&lt;GitStatus&gt;
      */
-    public ArrayList<GitStatus> getStatuses(
+    public List<GitStatus> getStatuses(
         final UUID project, 
         final String commitId, 
         final UUID repositoryId, 
@@ -17297,7 +17296,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitStatus>>() {});
     }
 
     /** 
@@ -17313,9 +17312,9 @@ public abstract class GitHttpClientBase
      *            
      * @param latestOnly 
      *            
-     * @return ArrayList&lt;GitStatus&gt;
+     * @return List&lt;GitStatus&gt;
      */
-    public ArrayList<GitStatus> getStatuses(
+    public List<GitStatus> getStatuses(
         final String commitId, 
         final String repositoryId, 
         final Integer top, 
@@ -17341,7 +17340,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitStatus>>() {});
     }
 
     /** 
@@ -17357,9 +17356,9 @@ public abstract class GitHttpClientBase
      *            
      * @param latestOnly 
      *            
-     * @return ArrayList&lt;GitStatus&gt;
+     * @return List&lt;GitStatus&gt;
      */
-    public ArrayList<GitStatus> getStatuses(
+    public List<GitStatus> getStatuses(
         final String commitId, 
         final UUID repositoryId, 
         final Integer top, 
@@ -17385,7 +17384,7 @@ public abstract class GitHttpClientBase
                                                                queryParameters,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitStatus>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitStatus>>() {});
     }
 
     /** 
@@ -17393,9 +17392,9 @@ public abstract class GitHttpClientBase
      * 
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;GitSuggestion&gt;
+     * @return List&lt;GitSuggestion&gt;
      */
-    public ArrayList<GitSuggestion> getSuggestions(final String repositoryId) { 
+    public List<GitSuggestion> getSuggestions(final String repositoryId) { 
 
         final UUID locationId = UUID.fromString("9393b4fb-4445-4919-972b-9ad16f442d83"); //$NON-NLS-1$
         final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
@@ -17409,7 +17408,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitSuggestion>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitSuggestion>>() {});
     }
 
     /** 
@@ -17417,9 +17416,9 @@ public abstract class GitHttpClientBase
      * 
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;GitSuggestion&gt;
+     * @return List&lt;GitSuggestion&gt;
      */
-    public ArrayList<GitSuggestion> getSuggestions(final UUID repositoryId) { 
+    public List<GitSuggestion> getSuggestions(final UUID repositoryId) { 
 
         final UUID locationId = UUID.fromString("9393b4fb-4445-4919-972b-9ad16f442d83"); //$NON-NLS-1$
         final ApiResourceVersion apiVersion = new ApiResourceVersion("3.1-preview.1"); //$NON-NLS-1$
@@ -17433,7 +17432,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitSuggestion>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitSuggestion>>() {});
     }
 
     /** 
@@ -17443,9 +17442,9 @@ public abstract class GitHttpClientBase
      *            Project ID or project name
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;GitSuggestion&gt;
+     * @return List&lt;GitSuggestion&gt;
      */
-    public ArrayList<GitSuggestion> getSuggestions(
+    public List<GitSuggestion> getSuggestions(
         final String project, 
         final String repositoryId) { 
 
@@ -17462,7 +17461,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitSuggestion>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitSuggestion>>() {});
     }
 
     /** 
@@ -17472,9 +17471,9 @@ public abstract class GitHttpClientBase
      *            Project ID or project name
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;GitSuggestion&gt;
+     * @return List&lt;GitSuggestion&gt;
      */
-    public ArrayList<GitSuggestion> getSuggestions(
+    public List<GitSuggestion> getSuggestions(
         final String project, 
         final UUID repositoryId) { 
 
@@ -17491,7 +17490,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitSuggestion>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitSuggestion>>() {});
     }
 
     /** 
@@ -17501,9 +17500,9 @@ public abstract class GitHttpClientBase
      *            Project ID
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;GitSuggestion&gt;
+     * @return List&lt;GitSuggestion&gt;
      */
-    public ArrayList<GitSuggestion> getSuggestions(
+    public List<GitSuggestion> getSuggestions(
         final UUID project, 
         final String repositoryId) { 
 
@@ -17520,7 +17519,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitSuggestion>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitSuggestion>>() {});
     }
 
     /** 
@@ -17530,9 +17529,9 @@ public abstract class GitHttpClientBase
      *            Project ID
      * @param repositoryId 
      *            
-     * @return ArrayList&lt;GitSuggestion&gt;
+     * @return List&lt;GitSuggestion&gt;
      */
-    public ArrayList<GitSuggestion> getSuggestions(
+    public List<GitSuggestion> getSuggestions(
         final UUID project, 
         final UUID repositoryId) { 
 
@@ -17549,7 +17548,7 @@ public abstract class GitHttpClientBase
                                                                apiVersion,
                                                                VssMediaTypes.APPLICATION_JSON_TYPE);
 
-        return super.sendRequest(httpRequest, new TypeReference<ArrayList<GitSuggestion>>() {});
+        return super.sendRequest(httpRequest, new TypeReference<List<GitSuggestion>>() {});
     }
 
     /** 
